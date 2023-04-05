@@ -1,1 +1,6 @@
-# modmail
+///////////////////////////
+// L RMN
+// https://discord.gg/WFfjrQxnfH
+// https://www.youtube.com/lrmnvp
+// https://lrmn.carrd.co/
+///////////////////////////
