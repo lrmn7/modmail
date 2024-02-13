@@ -20,7 +20,7 @@ If you find this project useful, please show your support by clicking the star (
 - [Node.js](https://nodejs.org/en/): version 16.9.0 or above.
 - [discord.js](https://www.npmjs.com/package/discord.js): version 14.14.1
 - [horizon-handler](https://www.npmjs.com/package/horizon-handler) (my package): version 1.6.0 or above.
-- [mewwme-sqlite](https://www.npmjs.com/package/lrmn7/mewwme-sqlite) (my package): version 2.0.1
+- [mewwme-sqlite](https://www.npmjs.com/package/mewwme-sqlite) (my package): version 2.0.1
 - [colors](https://www.npmjs.com/package/ms): any version.
 
 ## Setup the project:
