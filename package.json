@@ -1,22 +1,34 @@
 {
-  "name": "ModMail",
-  "version": "6.2.0",
-  "description": "",
+  "name": "modmail",
+  "version": "2.0.0",
+  "description": "A simple and advanced Discord ModMail bot.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
-  "keywords": [],
-  "author": "LRMN#6666",
-  "license": "ISC",
+  "keywords": [
+    "discordbot",
+    "modmail"
+  ],
+  "author": "lrmn7",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrmn7/modmail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lrmn7/modmail#issues"
+  },
+  "homepage": "https://github.com/lrmn7/modmail#readme",
+  "emails": {
+    "issues": "lrmn.dev@gmail.com"
+  },
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "better-sqlite3": "^7.6.2",
+    "mewwme-sqlite": "^2.0.1",
     "colors": "^1.4.0",
-    "discord.js": "^14.6.0",
-    "express": "^4.18.2",
-    "ms": "^2.1.3",
-    "node-fetch": "^3.2.6",
-    "quick.db": "^9.0.6"
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "horizon-handler": "^1.6.0"
   }
 }
