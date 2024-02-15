@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://discord.gg/6EXgrmtkPX">
-    <img src=".github/assets/modmailbanner.png" alt="Mewwme" >
+    <img src=".github/assets/modmailsbanner.png" alt="Mewwme" >
   </a>
 
   <h1 align="center">MODMAIL SYSTEM DISCORD BOT</h1>
