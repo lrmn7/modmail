@@ -9,7 +9,7 @@ module.exports = {
         categoryId: process.env.MODMAIL_CATEGORY_ID, // The modmail category ID
         staffRoles: [process.env.MODMAIL_STAFF_ROLES], // The modmail staff roles IDs
         mentionStaffRolesOnNewMail: true, // Mention staff roles when there is a new mail?
-        color: '#7289DA' // The embed color Red, Green, Blue, or Color Hex Color Codes
+        color: '#7289DA'
     },
     setPresence: {
         activity1: `Love has a cost, and both of us lost`,
