@@ -5,7 +5,7 @@ Simple ModMail Discord bot designed for a small server and people that want to m
 ---
 
 ✨ Features Command
-`/avatar`: Set bot avatar using GIF format.
+`/animated-avatar`: Set bot avatar using GIF format.
 `/ban`: Ban a user from using the ModMail System.
 `/unban`: Unban a user from using the ModMail System.
 

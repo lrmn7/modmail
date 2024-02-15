@@ -7,7 +7,7 @@ module.exports = new eventshandler.event({
         if (!interaction.isChatInputCommand()) return;
 
         const command = commandshandler.collection.get(interaction.commandName);
-        
+
         if (!command || command.type !== 1) return;
 
         try {

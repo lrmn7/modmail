@@ -34,7 +34,7 @@ module.exports = new eventshandler.event({
                 };
 
                 transcriptMessages.reverse();
-                
+
                 // This will remove the first messages when the mail is created, do not touch this to avoid future errors.
                 transcriptMessages.shift();
                 transcriptMessages.shift();
@@ -62,16 +62,16 @@ module.exports = new eventshandler.event({
                             Buffer.from(transcriptMessages.join('\n'), 'utf-8'), { name: 'history.txt' }
                         )
                     ]
-                    }).catch(null);
-                    
-                    await webhookClient.send({
-                        embeds: [
-                            new EmbedBuilder()
-                                .setTitle('Mail closed')
-                                .setDescription(`<@${data?.authorId || '000000000000000000'}>'s mail has been closed by a staff.\n\n**Executed by**: ${interaction.user.displayName} (${interaction.user.toString()})\n**Date**: ${time(Date.now(), 'f')} (${time(Date.now(), 'R')})`)
-                                .setColor(config.modmail.color)
-                        ]
-                    });
+                }).catch(null);
+
+                await webhookClient.send({
+                    embeds: [
+                        new EmbedBuilder()
+                            .setTitle('Mail closed')
+                            .setDescription(`<@${data?.authorId || '000000000000000000'}>'s mail has been closed by a staff.\n\n**Executed by**: ${interaction.user.displayName} (${interaction.user.toString()})\n**Date**: ${time(Date.now(), 'f')} (${time(Date.now(), 'R')})`)
+                            .setColor(config.modmail.color)
+                    ]
+                });
 
                 break;
             };

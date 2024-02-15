@@ -212,7 +212,7 @@ module.exports = new eventshandler.event({
                                         )
                                 ]
                             }).then(async (sent) => await sent.pin());
-                            
+
                             if (webhookClient === null) return;
 
                             await webhookClient.send({

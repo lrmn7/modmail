@@ -18,7 +18,7 @@
 </p>
 
 ## ✨ Features Command
-`/avatar`: Set bot avatar using gif format.
+`/animated-avatar`: Set bot avatar using gif format.
 `/ban`: Ban a user from using the ModMail System.
 `/unban`: Unban a user from using the ModMail System.
 

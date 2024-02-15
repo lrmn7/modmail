@@ -24,19 +24,19 @@ const permissionsCalculator = (member) => {
     if (member.permissions.has('SendMessages')) {
         final = 'Member';
     };
-    
+
     if (member.permissions.has('BanMembers') || member.permissions.has('KickMembers')) {
         final = 'Moderator';
     };
-    
+
     if (member.permissions.has('ManageGuild')) {
         final = 'Manager';
     };
-    
+
     if (member.permissions.has('Administrator')) {
         final = 'Administrator';
     };
-    
+
     if (member.user.id === member.guild.ownerId) {
         final = 'Owner';
     };
