@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://discord.gg/6EXgrmtkPX">
-    <img src="https://cdn.is-a.fun/bot/mewwme/mewgithub.png" alt="Mewwme" >
+    <img src="https://raw.githubusercontent.com/lrmn7/modmail/main/.github/assets/modmailgithub.png" alt="Mewwme" >
   </a>
 
   <h1 align="center">Mews ModMail</h1>
@@ -21,13 +21,13 @@
 - `/animated-avatar`: Set bot avatar using gif format.
 - `/ban`: Ban a user from using the ModMail System.
 - `/unban`: Unban a user from using the ModMail System.
-- logs channel `modmail` created and closed
+- categories channel & logs channel `modmail` created and closed
 
 ## Disclaimer
 This bot only support one pair of server per bot, one main server and one thread server.
 
 ## 🏆 UI Interface of bot
-![ui-bot](https://cdn.is-a.fun/bot/archive/ui.png)
+![help_command](https://raw.githubusercontent.com/lrmn7/modmail/main/.github/assets/modmail.png)
 
 ## 🔮 18 Themes, easy setup
 ![musiccard](https://cdn.is-a.fun/bot/archive/musiccard.png)
