@@ -1,12 +1,13 @@
 const { eventshandler, commandshandler, db } = require("..");
 const config = require("../config");
-
 module.exports = new eventshandler.event({
     event: 'ready',
     once: true,
     run: async (_, client) => {
 
-        console.log('Logged in as: ' + client.user.displayName);
+        const loginTimestamp = new Date().toLocaleString();
+        console.log(`[${loginTimestamp}] Logged in as: ${client.user.displayName}`);
+        
 
         await commandshandler.deploy(client, {
             REST: {
@@ -28,7 +29,9 @@ module.exports = new eventshandler.event({
             process.exit(1);
         };
 
-        console.log('Started checking the JSON files database...');
+        const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+        console.log(`[${timestamp}] Started checking the JSON files database...`);
+        
 
         const mails = await db.select('mails', { guildId: guild.id });
 
@@ -44,6 +47,7 @@ module.exports = new eventshandler.event({
             };
         };
 
-        console.log('Total invalid mails found and deleted: ' + found);
+        console.log(`[${loginTimestamp}] Total invalid mails found and deleted: ${found}`);
+        
     }
 });

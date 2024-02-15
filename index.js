@@ -87,8 +87,16 @@ client.login(config.client.token || process.env.CLIENT_TOKEN).catch((e) => {
 const commandshandler = new CommandsHandler('./commands/', false);
 const eventshandler = new EventsHandler('./events/', false);
 
-commandshandler.on('fileLoad', (command) => console.log('Loaded new command: ' + command.name));
-eventshandler.on('fileLoad', (event) => console.log('Loaded new event: ' + event));
+commandshandler.on('fileLoad', (command) => {
+    const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+    console.log(`[${timestamp}] Loaded new command: ${command.name}`);
+});
+
+eventshandler.on('fileLoad', (event) => {
+    const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+    console.log(`[${timestamp}] Loaded new event: ${event}`);
+});
+
 
 module.exports = {
     client,
