@@ -27,7 +27,7 @@
 > **This bot only support one pair of server per bot, one main server and one thread server.**
 
 ## 🏆 UI Interface of bot
-![ui](.github/assets/modmail.png)
+![ui](.github/assets/modmails.png)
 
 ## 📋 Requirements
 - ![Node.js](https://img.shields.io/badge/Node.js-026E00?style=for-the-badge) Node.js Version 16.6.0+ [Download](https://nodejs.org/en/download)
