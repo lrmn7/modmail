@@ -159,9 +159,6 @@ module.exports = new eventshandler.event({
                                     new EmbedBuilder()
                                         .setTitle(`${guild.name} - ModMail`)
                                         .setDescription('Thank you for creating a new mail, a staff member should respond to your ticket any time soon!')
-                                        .setFooter({
-                                            text: 'Made by TRAGIC in Bogor'
-                                        })
                                         .setColor(config.modmail.color)
                                 ],
                                 components: []
