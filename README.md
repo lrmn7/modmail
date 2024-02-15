@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://discord.gg/6EXgrmtkPX">
-    <img src="https://raw.githubusercontent.com/lrmn7/modmail/main/.github/assets/modmailgithub.png" alt="Mewwme" >
+    <img src=".github/assets/modmailgithub.png" alt="Mewwme" >
   </a>
 
   <h1 align="center">Mews ModMail</h1>
@@ -27,11 +27,7 @@
 This bot only support one pair of server per bot, one main server and one thread server.
 
 ## 🏆 UI Interface of bot
-![help_command](https://raw.githubusercontent.com/lrmn7/modmail/main/.github/assets/modmail.png)
-
-## 🔮 18 Themes, easy setup
-![musiccard](https://cdn.is-a.fun/bot/archive/musiccard.png)
-![musiccard](https://cdn.is-a.fun/bot/archive/card.png)
+![ui](.github/assets/modmail.png)
 
 ## 📋 Requirements
 - ![Node.js](https://img.shields.io/badge/Node.js-026E00?style=for-the-badge) Node.js Version 16.6.0+ [Download](https://nodejs.org/en/download)
