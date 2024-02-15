@@ -21,6 +21,7 @@
 - `/animated-avatar`: Set bot avatar using gif format.
 - `/ban`: Ban a user from using the ModMail System.
 - `/unban`: Unban a user from using the ModMail System.
+- logs channel `modmail` created and closed
 
 ## Disclaimer
 This bot only support one pair of server per bot, one main server and one thread server.
