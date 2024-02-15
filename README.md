@@ -4,7 +4,7 @@
     <img src=".github/assets/modmailgithub.png" alt="Mewwme" >
   </a>
 
-  <h1 align="center">MOD MAIL SYSTEM DISCORD BOT</h1>
+  <h1 align="center">MODMAIL SYSTEM DISCORD BOT</h1>
 
   <p align="center">Simple ModMail Discord bot designed for a small server and people that want to maintain their own ModMail bot in discord. ModMail is a bot that create a private space between moderator and user to address an issue by acting as a bridge between user DM channel and new temporary channel inside a thread server.
     <br />
@@ -24,7 +24,7 @@
 - categories channel & logs channel `modmail` created and closed
 
 ## Disclaimer
-This bot only support one pair of server per bot, one main server and one thread server.
+> This bot only support one pair of server per bot, one main server and one thread server.
 
 ## 🏆 UI Interface of bot
 ![ui](.github/assets/modmail.png)
