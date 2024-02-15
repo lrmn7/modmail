@@ -33,36 +33,10 @@
 - ![Node.js](https://img.shields.io/badge/Node.js-026E00?style=for-the-badge) Node.js Version 16.6.0+ [Download](https://nodejs.org/en/download)
 - ![Discord](https://img.shields.io/badge/Discord-404EED?style=for-the-badge) Discord Bot Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 - ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge) Git [Download](https://git-scm.com/downloads)
+---
 
-## 🛠️ Installation
-```javascript
-module.exports = {
-    client: {
-        token: process.env.BOT_TOKEN,
-        id: process.env.BOT_ID
-    },
-    modmail: {
-        ownerId: process.env.OWNER_ID,
-        guildId: process.env.SERVER_ID,
-        categoryId: process.env.MODMAIL_CATEGORY_ID,
-        staffRoles: [process.env.MODMAIL_STAFF_ROLES],
-        mentionStaffRolesOnNewMail: true,
-        color: '#7289DA'
-    },
-    setPresence: { // set random activity
-        activity1: `Love has a cost, and both of us lost`,
-        activity2: `Mostly sleepless🌛`,
-        activity3: `Mewwme's Everywhere`,
-        customStatus: "Need help support? DM!", // set custom status if type is 4
-        type: 4, // 0 = PLAYING, 1 = STREAMING, 2 = LISTENING, 3 = WATCHING, 4 = CUSTOM. 5 = COMPETING
-        url: `https://www.youtube.com/watch?v=F-wbcMyeq4A`, // set stream url activity, support youtube, twitch only
-        status: 'online', // online, idle, dnd, invisible
-    },    
-    logs: {
-        webhookURL: process.env.WEBHOOK_URL,
-    }
-};
-```
+![ui](.github/assets/installing.png)
+
 1. Check `config.js` and Change the name of **.env.example** to **.env** and fill in the required information.
 2. run `npm install` to install the required packages.
 3. run `npm run start` or `node .` to run the project bot.
