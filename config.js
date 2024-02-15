@@ -4,11 +4,12 @@ module.exports = {
         id: process.env.BOT_ID // Your bot ID
     },
     modmail: {
+        ownerId: process.env.OWNER_ID, // Your bot owner ID
         guildId: process.env.SERVER_ID, // Your server ID
         categoryId: process.env.MODMAIL_CATEGORY_ID, // The modmail category ID
         staffRoles: [process.env.MODMAIL_STAFF_ROLES], // The modmail staff roles IDs
         mentionStaffRolesOnNewMail: true, // Mention staff roles when there is a new mail?
-        color: 'Red' // The embed color Red, Green, Blue, or Color Hex Color Codes
+        color: '#7289DA' // The embed color Red, Green, Blue, or Color Hex Color Codes
     },
     setPresence: {
         activity1: `Love has a cost, and both of us lost`,
@@ -19,6 +20,6 @@ module.exports = {
         status: 'dnd', // online, idle, dnd, invisible
     },
     logs: {
-        webhookURL: process.env.LOGGING_WEBHOOK_URL // The logging webhook URL (OPTIONAL) (.env IS RECOMMENDED)
+        webhookURL: process.env.WEBHOOK_URL, // The logging webhook URL (OPTIONAL) (.env IS RECOMMENDED)
     }
 };

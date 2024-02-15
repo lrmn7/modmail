@@ -48,7 +48,7 @@ const webhookClient = (config.logs.webhookURL || process.env.WEBHOOK_URL )
     ? new WebhookClient({ url: config.logs.webhookURL || process.env.WEBHOOK_URL })
     : null;
 
-const db = new SQLiteDatabase('./SQL/main.db');
+const db = new SQLiteDatabase('./database/main.db');
 
 (async () => {
     await db.create(

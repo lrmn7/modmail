@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
 const { commandshandler, db } = require("..");
 
+
 module.exports = new commandshandler.command({
     type: 1,
     structure: new SlashCommandBuilder()
