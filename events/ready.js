@@ -29,7 +29,7 @@ module.exports = new eventshandler.event({
             process.exit(1);
         };
 
-        const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+        const timestamp = new Date().toLocaleString();
         console.log(`[${timestamp}] Started checking the JSON files database...`);
         
 

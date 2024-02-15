@@ -95,12 +95,12 @@ const commandshandler = new CommandsHandler('./commands/', false);
 const eventshandler = new EventsHandler('./events/', false);
 
 commandshandler.on('fileLoad', (command) => {
-    const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+    const timestamp = new Date().toLocaleString();
     console.log(`[${timestamp}] Loaded new command: ${command.name}`);
 });
 
 eventshandler.on('fileLoad', (event) => {
-    const timestamp = new Date().toLocaleString(); // Mengambil tanggal dan waktu saat ini
+    const timestamp = new Date().toLocaleString();
     console.log(`[${timestamp}] Loaded new event: ${event}`);
 });
 
