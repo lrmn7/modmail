@@ -50,7 +50,7 @@ module.exports = new eventshandler.event({
                 await user.send({
                     embeds: [
                         new EmbedBuilder()
-                            .setTitle('Your mail has been closed.')
+                            .setTitle('📁 Your mail has been closed.')
                             .setDescription(`**${interaction.user.displayName}** has closed your mail since it's marked as completed. Thank you for using our support!`)
                             .setColor(config.modmail.color)
                     ]
@@ -68,7 +68,7 @@ module.exports = new eventshandler.event({
                 await webhookClient.send({
                     embeds: [
                         new EmbedBuilder()
-                            .setTitle('Mail closed')
+                            .setTitle('📤Mail closed')
                             .setDescription(`<@${data?.authorId || '000000000000000000'}>'s mail has been closed by a staff.\n\n**Executed by**: ${interaction.user.displayName} (${interaction.user.toString()})\n**Date**: ${time(Date.now(), 'f')} (${time(Date.now(), 'R')})`)
                             .setColor(config.modmail.color)
                     ]

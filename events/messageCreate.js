@@ -140,7 +140,7 @@ module.exports = new eventshandler.event({
                             };
 
                             const newchannel = await guild.channels.create({
-                                name: message.author.displayName,
+                                name: `📩${message.author.username}`,
                                 nsfw: false,
                                 type: 0,
                                 parent: category.id,
@@ -157,7 +157,7 @@ module.exports = new eventshandler.event({
                                 content: null,
                                 embeds: [
                                     new EmbedBuilder()
-                                        .setTitle(`${guild.name} - ModMail`)
+                                        .setTitle(`📂 Your mail has been created.`)
                                         .setDescription('Thank you for creating a new mail, a staff member should respond to your ticket any time soon!')
                                         .setColor(config.modmail.color)
                                 ],
@@ -170,7 +170,7 @@ module.exports = new eventshandler.event({
                             });
 
                             const embed = new EmbedBuilder()
-                                .setTitle(`New mail`)
+                                .setTitle(`📥New mail`)
                                 .addFields(
                                     {
                                         name: `Author`,
@@ -215,7 +215,7 @@ module.exports = new eventshandler.event({
                             await webhookClient.send({
                                 embeds: [
                                     new EmbedBuilder()
-                                        .setTitle('New mail created')
+                                        .setTitle('📥New mail created')
                                         .setDescription(`<@${message.author.id || '000000000000000000'}>'s mail has been created.\n\n**Executed by**: ${message.author.displayName} (${message.author.toString()})\n**Date**: ${time(Date.now(), 'f')} (${time(Date.now(), 'R')})`)
                                         .setColor(config.modmail.color)
                                 ]
