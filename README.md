@@ -38,27 +38,28 @@
 ```javascript
 module.exports = {
     client: {
-        token: process.env.BOT_TOKEN, // Your bot token (.env IS RECOMMENDED) https://discord.com/developers/applications/
-        id: process.env.BOT_ID // Your bot ID
+        token: process.env.BOT_TOKEN,
+        id: process.env.BOT_ID
     },
     modmail: {
-        ownerId: process.env.OWNER_ID, // Your bot owner ID
-        guildId: process.env.SERVER_ID, // Your server ID
-        categoryId: process.env.MODMAIL_CATEGORY_ID, // The modmail category ID
-        staffRoles: [process.env.MODMAIL_STAFF_ROLES], // The modmail staff roles IDs
-        mentionStaffRolesOnNewMail: true, // Mention staff roles when there is a new mail?
-        color: '#7289DA' // The embed color Red, Green, Blue, or Color Hex Color Codes
+        ownerId: process.env.OWNER_ID,
+        guildId: process.env.SERVER_ID,
+        categoryId: process.env.MODMAIL_CATEGORY_ID,
+        staffRoles: [process.env.MODMAIL_STAFF_ROLES],
+        mentionStaffRolesOnNewMail: true,
+        color: '#7289DA'
     },
-    setPresence: {
+    setPresence: { // set random activity
         activity1: `Love has a cost, and both of us lost`,
-        activity2: `Mostly sleepless🌛`, // The modmail category ID
-        activity3: `Mewwme's Everywhere`, // The modmail staff roles IDs
-        type: 2, // # 0 = PLAYING, 1 = STREAMING, 2 = LISTENING, 3 = WATCHING, 4 = CUSTOM. 5 = COMPETING
-        url: `https://www.youtube.com/watch?v=F-wbcMyeq4A`, // URL optional, only required for certain activity types 3
-        status: 'dnd', // online, idle, dnd, invisible
-    },
+        activity2: `Mostly sleepless🌛`,
+        activity3: `Mewwme's Everywhere`,
+        customStatus: "Need help support? DM!", // set custom status if type is 4
+        type: 4, // 0 = PLAYING, 1 = STREAMING, 2 = LISTENING, 3 = WATCHING, 4 = CUSTOM. 5 = COMPETING
+        url: `https://www.youtube.com/watch?v=F-wbcMyeq4A`, // set stream url activity, support youtube, twitch only
+        status: 'online', // online, idle, dnd, invisible
+    },    
     logs: {
-        webhookURL: process.env.WEBHOOK_URL, // The logging webhook URL (OPTIONAL) (.env IS RECOMMENDED)
+        webhookURL: process.env.WEBHOOK_URL,
     }
 };
 ```

@@ -15,10 +15,10 @@ module.exports = {
         activity1: `Love has a cost, and both of us lost`,
         activity2: `Mostly sleepless🌛`,
         activity3: `Mewwme's Everywhere`,
-        customStatus: "Need help support? DM!",
+        customStatus: "Need help support? DM!", // set custom status if type is 4
         type: 4, // 0 = PLAYING, 1 = STREAMING, 2 = LISTENING, 3 = WATCHING, 4 = CUSTOM. 5 = COMPETING
-        url: `https://www.youtube.com/watch?v=F-wbcMyeq4A`,
-        status: 'online',
+        url: `https://www.youtube.com/watch?v=F-wbcMyeq4A`, // set stream url activity, support youtube, twitch only
+        status: 'online', // online, idle, dnd, invisible
     },    
     logs: {
         webhookURL: process.env.WEBHOOK_URL,
