@@ -24,7 +24,7 @@
 - categories channel & logs channel `modmail` created and closed
 
 ## Disclaimer
-> This bot only support one pair of server per bot, one main server and one thread server.
+> **This bot only support one pair of server per bot, one main server and one thread server.**
 
 ## 🏆 UI Interface of bot
 ![ui](.github/assets/modmail.png)
