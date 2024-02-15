@@ -9,7 +9,7 @@
   <p align="center">Simple ModMail Discord bot designed for a small server and people that want to maintain their own ModMail bot in discord. ModMail is a bot that create a private space between moderator and user to address an issue by acting as a bridge between user DM channel and new temporary channel inside a thread server.
     <br />
     <br />
-    <a href="https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=551940385840&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.gg%2F6EXgrmtkPX&scope=guilds.join+bot+applications.commands">Invite Mewwme's</a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=551940385840&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.gg%2F6EXgrmtkPX&scope=guilds.join+bot+applications.commands">Invite Mewwme's Music</a>
     ·
     <a href="https://discord.gg/6EXgrmtkPX">Report Issues & Give Suggestions</a>
     ·
