@@ -4,7 +4,8 @@ const {
     Client,
     GatewayIntentBits,
     Partials,
-    WebhookClient
+    WebhookClient,
+    Constants
 } = require('discord.js');
 require('colors');
 require('dotenv').config();
@@ -12,37 +13,43 @@ const config = require("./config.js");
 const projectVersion = require('./package.json').version || "v0.0.0";
 
 const client = new Client({
-    intents: Object.values(GatewayIntentBits), // Use Object.values to get the intent bits array
+    intents: Object.values(GatewayIntentBits),
     partials: [
         Partials.Message,
         Partials.Channel,
         Partials.GuildMember,
         Partials.User
     ],
-    presence: { // Define presence object directly inside the constructor
+    presence: {
         activities: [],
     },
     shards: "auto"
 });
 
 const activities = [
-    `${config.setPresence.activity1} || "Mewwme everywhere"`, 
-    `${config.setPresence.activity2} || "Mewwme everythings"`,
-    `${config.setPresence.activity3} || "Mostly sleepless🌛"`,
+    `${config.setPresence.activity1}`,
+    `${config.setPresence.activity2}`,
+    `${config.setPresence.activity3}`,
+    `${config.setPresence.customStatus}`
 ];
 
 setInterval(() => {
     const randomActivity = activities[Math.floor(Math.random() * activities.length)];
-    client.user.setPresence({
-        activities: [{
-            name: randomActivity,
-            type: config.setPresence.type,
-            url: `${config.setPresence.url}`
-        }],
-        status: `${config.setPresence.status}`,
-    });
-}, 5000); // Set interval to update presence every minute
+    const activityObj = {
+        name: randomActivity,
+        type: config.setPresence.type,
+        url: `${config.setPresence.url}`
+    };
 
+    if (config.setPresence.type === 4) {
+        activityObj.state = `${config.setPresence.customStatus}`;
+    }
+
+    client.user.setPresence({
+        activities: [activityObj],
+        status: config.setPresence.status
+    });
+}, 5000);
 
 const webhookClient = (config.logs.webhookURL || process.env.WEBHOOK_URL )
     ? new WebhookClient({ url: config.logs.webhookURL || process.env.WEBHOOK_URL })
