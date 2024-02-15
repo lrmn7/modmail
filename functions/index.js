@@ -53,7 +53,7 @@ module.exports = {
 
 /*
 * Discord.js Version 14.14.1
-* MODMAILS
+* MODMAIL
 * Developer: L RMN
 * Support server: https://discord.gg/mewwme
 */

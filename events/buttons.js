@@ -52,9 +52,6 @@ module.exports = new eventshandler.event({
                         new EmbedBuilder()
                             .setTitle('Your mail has been closed.')
                             .setDescription(`**${interaction.user.displayName}** has closed your mail since it's marked as completed. Thank you for using our support!`)
-                            .setFooter({
-                                text: `${interaction.guild.name} thankyou`
-                            })
                     ]
                 }).catch(null);
 

@@ -1,42 +1,52 @@
+<br />
+<p align="center">
+  <a href="https://discord.gg/6EXgrmtkPX">
+    <img src="https://cdn.is-a.fun/bot/mewwme/mewgithub.png" alt="Mewwme" >
+  </a>
+
+  <h1 align="center">Mews ModMail</h1>
+
+  <p align="center">Simple ModMail Discord bot designed for a small server and people that want to maintain their own ModMail bot in discord. ModMail is a bot that create a private space between moderator and user to address an issue by acting as a bridge between user DM channel and new temporary channel inside a thread server.
+    <br />
+    <br />
+    <a href="https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=551940385840&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.gg%2F6EXgrmtkPX&scope=guilds.join+bot+applications.commands">Invite Mewwme's</a>
+    ·
+    <a href="https://discord.gg/6EXgrmtkPX">Report Issues & Give Suggestions</a>
+    ·
+    <a href="https://discord.gg/mewwme">Support Server</a>
+  </p>
+</p>
+
+## ✨ Features Command
+`/avatar`: Set bot avatar using gif format.
+`/ban`: Ban a user from using the ModMail System.
+`/unban`: Unban a user from using the ModMail System.
+
+## Disclaimer
+This bot only support one pair of server per bot, one main server and one thread server.
+
+## 🏆 UI Interface of bot
+![ui-bot](https://cdn.is-a.fun/bot/archive/ui.png)
+
+## 🔮 18 Themes, easy setup
+![musiccard](https://cdn.is-a.fun/bot/archive/musiccard.png)
+![musiccard](https://cdn.is-a.fun/bot/archive/card.png)
+
+## 📋 Requirements
+- ![Node.js](https://img.shields.io/badge/Node.js-026E00?style=for-the-badge) Node.js Version 16.6.0+ [Download](https://nodejs.org/en/download)
+- ![Discord](https://img.shields.io/badge/Discord-404EED?style=for-the-badge) Discord Bot Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+- ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge) Git [Download](https://git-scm.com/downloads)
+
+## 🛠️ Installation
+1. Check `config.js` and Change the name of **.env.example** to **.env** and fill in the required information.
+2. run `npm install` to install the required packages.
+3. run `npm run start` or `node .` to run the project bot.
+4. **Enjoy ModMail**
 
 
-# MODMAIL LATEST UPDATE
+Make sure to follow these steps carefully to set up your server for running the Mewwme music bot. If you encounter any issues, join [server discord](https://discord.gg/6EXgrmtkPX)
 
-Welcome to DiscordJS-V14-ModMail-Bot, a Discord bot project developed using the powerful npm package discord.js version 14. This bot is designed to efficiently manage modmail on a server, utilizing a single JSON database for seamless communication.
+## ⚙️ Guide
+For advanced installation and configuration guidance, feel free to discuss on our [Discord Server](https://discord.gg/6EXgrmtkPX)
 
-If you find this project useful, please show your support by clicking the star (⭐️) button above this repository. Thank you! 🙏
-
-# Features
-
-- Easy to use and set up.
-- Simplifies the management of modmail.
-- Robust error handling for a smooth experience.
-- Transcript system.
-- Webhook logging system.
-
-
-## Requirements:
-
-- [Node.js](https://nodejs.org/en/): version 16.9.0 or above.
-- [discord.js](https://www.npmjs.com/package/discord.js): version 14.14.1
-- [horizon-handler](https://www.npmjs.com/package/horizon-handler) (my package): version 1.6.0 or above.
-- [mewwme-sqlite](https://www.npmjs.com/package/mewwme-sqlite) (my package): version 2.0.1
-- [colors](https://www.npmjs.com/package/ms): any version.
-
-## Setup the project:
-
-To run the project, follow these steps:
-
-1. Download and unzip the source code.
-2. Open Visual Studio Code and select the unzipped folder as your workspace.
-3. Use `npm init -y` and then `npm i`.
-4. Fill in the empty values in the `config.js` file with the required information, you can use `.env` file for more security. Obtain your bot token from the [Discord Developer Portal](https://discord.com/developers).
-5. Open the terminal in Visual Studio Code and run `node index.js`, `node .`, or `npm run start`.
-6. Enjoy! =)
-
-### Logging Discord webhook:
-Create a new integration for a text channel (which is webhook, for sure), and copy it's URL and use it in `config.js` or `.env`. It's just a simple logging system, whichs logs the newly created mail and closed mails.
-
-## Need Assistance?
-
-If you encounter any issues or have questions about this project, please create an issue on this repository. I will respond to your inquiries as quickly as possible. Your feedback is valuable and helps improve the project.
+---
